@@ -4,7 +4,7 @@ require("dotenv").config();
 
 const authRoute = require("./routes/auth");
 const app = express();
-const Port = process.env.app || 5000;
+const Port = process.env.Port || 5000;
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const messagingServiceSid = process.env.TWILIO_MESSAGING_SERVICE_SID;
